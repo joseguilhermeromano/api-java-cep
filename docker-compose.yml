@@ -1,4 +1,5 @@
 version: '3'
+
 services:
   postgres:
     image: postgres:latest
@@ -8,16 +9,32 @@ services:
       POSTGRES_DB: address_db
     ports:
       - "5432:5432"
+    networks:
+      - app-network
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
+    networks:
+      - app-network
 
   java-app:
     build:
       context: .
       dockerfile: Dockerfile
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/address_db
-      SPRING_DATASOURCE_USERNAME: user
-      SPRING_DATASOURCE_PASSWORD: 12345678
     ports:
-      - "8080:8080"
+      - "8081:80"
     depends_on:
       - postgres
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,3 @@
+br\com\zeguitech\apis\users\model\User.class
+br\com\zeguitech\apis\addresses\model\Address.class
+br\com\zeguitech\apis\users\repository\UserRepository.class

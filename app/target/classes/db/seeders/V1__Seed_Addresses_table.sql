@@ -1,0 +1,22 @@
+
+INSERT INTO addresses (street, number, complement, neighborhood, city, state, zipcode, user_id) VALUES
+    ('Street 1', '1', 'Apt 101', 'Neighborhood 1', 'City 1', 'State 1', '12345-678', 1),
+    ('Street 2', '2', 'Apt 102', 'Neighborhood 2', 'City 2', 'State 2', '12345-679', 1),
+    ('Street 3', '3', 'Apt 103', 'Neighborhood 3', 'City 3', 'State 3', '12345-680', 2),
+    ('Street 4', '4', 'Apt 104', 'Neighborhood 4', 'City 4', 'State 4', '12345-681', 2),
+    ('Street 5', '5', 'Apt 105', 'Neighborhood 5', 'City 5', 'State 5', '12345-682', 3),
+    ('Street 6', '6', 'Apt 106', 'Neighborhood 6', 'City 6', 'State 6', '12345-683', 3),
+    ('Street 7', '7', 'Apt 107', 'Neighborhood 7', 'City 7', 'State 7', '12345-684', 4),
+    ('Street 8', '8', 'Apt 108', 'Neighborhood 8', 'City 8', 'State 8', '12345-685', 4),
+    ('Street 9', '9', 'Apt 109', 'Neighborhood 9', 'City 9', 'State 9', '12345-686', 5),
+    ('Street 10', '10', 'Apt 110', 'Neighborhood 10', 'City 10', 'State 10', '12345-687', 5),
+    ('Street 11', '11', 'Apt 111', 'Neighborhood 11', 'City 11', 'State 11', '12345-688', 6),
+    ('Street 12', '12', 'Apt 112', 'Neighborhood 12', 'City 12', 'State 12', '12345-689', 6),
+    ('Street 13', '13', 'Apt 113', 'Neighborhood 13', 'City 13', 'State 13', '12345-690', 7),
+    ('Street 14', '14', 'Apt 114', 'Neighborhood 14', 'City 14', 'State 14', '12345-691', 7),
+    ('Street 15', '15', 'Apt 115', 'Neighborhood 15', 'City 15', 'State 15', '12345-692', 8),
+    ('Street 16', '16', 'Apt 116', 'Neighborhood 16', 'City 16', 'State 16', '12345-693', 8),
+    ('Street 17', '17', 'Apt 117', 'Neighborhood 17', 'City 17', 'State 17', '12345-694', 9),
+    ('Street 18', '18', 'Apt 118', 'Neighborhood 18', 'City 18', 'State 18', '12345-695', 9),
+    ('Street 19', '19', 'Apt 119', 'Neighborhood 19', 'City 19', 'State 19', '12345-696', 10),
+    ('Street 20', '20', 'Apt 120', 'Neighborhood 20', 'City 20', 'State 20', '12345-697', 10);
